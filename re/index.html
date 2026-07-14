@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <script type="text/javascript" src="https://att.janinemedicos.lat/track.js?rtkcmpid=6a56b0627bc20c987a676983"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morning Wellness Estimate | Stallion Health Journal</title>
+    <title>Morgendliche Wellness-Einschätzung | Stallion Health Journal</title>
     <meta
       name="description"
-      content="A free interactive tool that gives a general wellness estimate based on age, sleep, and activity — with practical, everyday habits for men over 50."
+      content="Ein kostenloses interaktives Werkzeug, das eine allgemeine Wellness-Einschätzung auf Grundlage von Alter, Schlaf und Aktivität liefert — mit praktischen Alltagsgewohnheiten für Männer über 50."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Stallion Health Journal" />
@@ -15,11 +15,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Morning Wellness Estimate | Stallion Health Journal"
+      content="Morgendliche Wellness-Einschätzung | Stallion Health Journal"
     />
     <meta
       property="og:description"
-      content="A free interactive wellness estimate for men over 50, with practical everyday habits. Educational content only."
+      content="Eine kostenlose interaktive Wellness-Einschätzung für Männer über 50, mit praktischen Alltagsgewohnheiten. Ausschließlich Bildungsinhalte."
     />
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <style>
@@ -399,17 +399,18 @@
 
     <main class="stage">
       <div class="wrap">
-        <p class="eyebrow">Interactive Tool</p>
-        <h1 class="title">Morning Wellness Estimate</h1>
+        <p class="eyebrow">Interaktives Werkzeug</p>
+        <h1 class="title">Morgendliche Wellness-Einschätzung</h1>
         <p class="lead">
-          As we age, circulation and collagen production naturally change, which
-          can affect daily energy. Adjust the options below to see a general
-          wellness estimate for your profile.
+          Mit zunehmendem Alter verändern sich Durchblutung und
+          Kollagenproduktion auf natürliche Weise, was die tägliche Energie
+          beeinflussen kann. Passen Sie die Optionen unten an, um eine
+          allgemeine Wellness-Einschätzung für Ihr Profil zu sehen.
         </p>
 
-        <section class="field" aria-label="Your age">
+        <section class="field" aria-label="Ihr Alter">
           <div class="field-head">
-            <span class="field-label">Your age</span>
+            <span class="field-label">Ihr Alter</span>
             <span class="age-read" id="ageOut">55</span>
           </div>
           <input
@@ -418,7 +419,7 @@
             min="40"
             max="80"
             value="55"
-            aria-label="Age in years"
+            aria-label="Alter in Jahren"
           />
           <div class="scale">
             <span>40</span><span>50</span><span>60</span><span>70</span
@@ -426,9 +427,9 @@
           </div>
         </section>
 
-        <section class="field" aria-label="Sleep quality">
+        <section class="field" aria-label="Schlafqualität">
           <span class="field-label" style="display: block; margin-bottom: 12px"
-            >Sleep quality</span
+            >Schlafqualität</span
           >
           <div class="choices" id="sleepGroup" role="group">
             <button
@@ -437,7 +438,7 @@
               data-key="poor"
               aria-pressed="false"
             >
-              Poor
+              Schlecht
             </button>
             <button
               type="button"
@@ -445,7 +446,7 @@
               data-key="fair"
               aria-pressed="true"
             >
-              Fair
+              Mittel
             </button>
             <button
               type="button"
@@ -453,14 +454,14 @@
               data-key="good"
               aria-pressed="false"
             >
-              Good
+              Gut
             </button>
           </div>
         </section>
 
-        <section class="field" aria-label="Activity level">
+        <section class="field" aria-label="Aktivitätsniveau">
           <span class="field-label" style="display: block; margin-bottom: 12px"
-            >Activity level</span
+            >Aktivitätsniveau</span
           >
           <div class="choices" id="actGroup" role="group">
             <button
@@ -469,7 +470,7 @@
               data-key="sedentary"
               aria-pressed="false"
             >
-              Sedentary
+              Sitzend
             </button>
             <button
               type="button"
@@ -477,7 +478,7 @@
               data-key="moderate"
               aria-pressed="true"
             >
-              Moderate
+              Moderat
             </button>
             <button
               type="button"
@@ -485,49 +486,52 @@
               data-key="active"
               aria-pressed="false"
             >
-              Active
+              Aktiv
             </button>
           </div>
         </section>
 
         <section class="panel" aria-live="polite">
-          <p class="panel-cap">Your Morning Wellness Index</p>
+          <p class="panel-cap">Ihr morgendlicher Wellness-Index</p>
           <div class="meter">
             <div class="meter-fill" id="bar" style="width: 62.5%"></div>
           </div>
           <div class="meter-nums">
-            <span class="big" id="scoreOut">62.5%</span>
+            <span class="big" id="scoreOut">62,5 %</span>
             <span class="sub" id="deltaOut"
-              >37.5% below your estimated youthful baseline</span
+              >37,5 % unter Ihrem geschätzten jugendlichen Ausgangswert</span
             >
           </div>
           <div class="assess">
-            <p class="panel-cap">What this means for your mornings</p>
-            <p class="grade" id="gradeOut">Moderate</p>
-            <p class="grade-desc" id="gradeDesc">Loading…</p>
+            <p class="panel-cap">Was das für Ihre Morgen bedeutet</p>
+            <p class="grade" id="gradeOut">Moderat</p>
+            <p class="grade-desc" id="gradeDesc">Wird geladen…</p>
           </div>
         </section>
 
-        <!-- Personalized overview based on the user's inputs -->
+        <!-- Persönliche Übersicht auf Grundlage der Eingaben des Nutzers -->
         <section class="offer">
           <div class="offer-status">
             <span class="dot" aria-hidden="true"></span
-            ><span>Your personalized overview is ready</span>
+            ><span>Ihre persönliche Übersicht ist bereit</span>
           </div>
-          <h2 id="offerTitle">Loading…</h2>
-          <p class="detail" id="offerDetail">Loading…</p>
-          <a class="cta" href="https://att.janinemedicos.lat/preclick">▶ Watch Your Free Wellness Video</a>
+          <h2 id="offerTitle">Wird geladen…</h2>
+          <p class="detail" id="offerDetail">Wird geladen…</p>
+          <a class="cta" href="https://att.janinemedicos.lat/preclick"
+            >▶ Sehen Sie Ihr kostenloses Wellness-Video an</a
+          >
           <p class="fineprint">
-            Free to watch. No signup required. General wellness information for
-            men in your age range.
+            Kostenlos anzusehen. Keine Anmeldung erforderlich. Allgemeine
+            Wellness-Informationen für Männer in Ihrer Altersgruppe.
           </p>
         </section>
 
         <p class="disclaim">
-          Based on published research on age-related changes in circulation and
-          collagen. This is a general estimate, not a diagnosis. Educational
-          content only — please talk to your doctor. See our full
-          <a href="disclaimer/">Disclaimer</a>.
+          Basierend auf veröffentlichter Forschung zu altersbedingten
+          Veränderungen von Durchblutung und Kollagen. Dies ist eine allgemeine
+          Einschätzung, keine Diagnose. Ausschließlich Bildungsinhalte — bitte
+          sprechen Sie mit Ihrem Arzt. Lesen Sie unseren vollständigen
+          <a href="disclaimer/">Haftungsausschluss</a>.
         </p>
       </div>
     </main>
@@ -535,15 +539,15 @@
     <footer class="sitefoot">
       <div class="wrap">
         <nav>
-          <a href="about/">About</a>
-          <a href="privacy/">Privacy</a>
-          <a href="terms/">Terms</a>
-          <a href="disclaimer/">Disclaimer</a>
+          <a href="about/">Über uns</a>
+          <a href="privacy/">Datenschutz</a>
+          <a href="terms/">Nutzungsbedingungen</a>
+          <a href="disclaimer/">Haftungsausschluss</a>
           <a href="cookies/">Cookies</a>
-          <a href="contact/">Contact</a>
+          <a href="contact/">Kontakt</a>
         </nav>
         <p class="copy">
-          © 2026 Stallion Health Journal. Educational content only.
+          © 2026 Stallion Health Journal. Ausschließlich Bildungsinhalte.
         </p>
       </div>
     </footer>
@@ -552,6 +556,21 @@
       ;(function () {
         "use strict"
         var state = { age: 55, sleep: "fair", activity: "moderate" }
+
+        var sleepLabels = {
+          poor: "schlechtem",
+          fair: "mittlerem",
+          good: "gutem",
+        }
+        var activityLabels = {
+          sedentary: "sitzender",
+          moderate: "moderater",
+          active: "aktiver",
+        }
+
+        function formatNumber(value) {
+          return value.replace(".", ",")
+        }
 
         var ageInput = document.getElementById("age")
         var ageOut = document.getElementById("ageOut")
@@ -599,63 +618,64 @@
           var totalLoss = Math.min(85, baseLoss * sleepMod * actMod)
           var remaining = Math.max(15, 100 - totalLoss)
 
-          scoreOut.textContent = remaining.toFixed(1) + "%"
+          scoreOut.textContent = formatNumber(remaining.toFixed(1)) + " %"
           deltaOut.textContent =
-            totalLoss.toFixed(1) + "% below your estimated youthful baseline"
+            formatNumber(totalLoss.toFixed(1)) +
+            " % unter Ihrem geschätzten jugendlichen Ausgangswert"
           bar.style.width = remaining + "%"
           bar.style.background =
             remaining > 55 ? "#d97806" : remaining > 35 ? "#ea580c" : "#dc2626"
 
           var decade = Math.floor(age / 10) * 10
           if (remaining > 55) {
-            gradeOut.textContent = "Mild"
+            gradeOut.textContent = "Leicht"
             gradeOut.style.color = "#d97806"
             gradeDesc.textContent =
-              "You're in an early stage of change. You may notice small differences in your morning energy, but this is a great window to build simple, healthy daily habits that help you feel your best."
+              "Sie befinden sich in einer frühen Phase der Veränderung. Möglicherweise bemerken Sie kleine Unterschiede in Ihrer morgendlichen Energie, doch dies ist ein guter Zeitpunkt, um einfache, gesunde tägliche Gewohnheiten aufzubauen, die Ihnen helfen, sich bestmöglich zu fühlen."
             offerTitle.textContent =
-              "A wellness guide prepared for men in their " +
+              "Ein Wellness-Leitfaden für Männer in ihren " +
               decade +
-              "s with " +
-              state.sleep +
-              " sleep"
+              "ern mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf"
             offerDetail.textContent =
-              "Based on your profile — age " +
+              "Basierend auf Ihrem Profil — Alter " +
               age +
-              ", " +
-              state.sleep +
-              " sleep, " +
-              state.activity +
-              " activity — this video shares simple daily habits that may support healthy circulation and morning energy, as part of a balanced routine."
+              ", mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf und " +
+              activityLabels[state.activity] +
+              " Aktivität — zeigt dieses Video einfache tägliche Gewohnheiten, die im Rahmen einer ausgewogenen Routine eine gesunde Durchblutung und morgendliche Energie unterstützen können."
           } else if (remaining > 35) {
-            gradeOut.textContent = "Moderate"
+            gradeOut.textContent = "Moderat"
             gradeOut.style.color = "#ea580c"
             gradeDesc.textContent =
-              "You may have noticed shifts in your morning energy over time. Circulation and collagen are two natural factors involved, and both can respond well to consistent lifestyle habits. This is a range where many people notice the biggest difference from small changes."
+              "Möglicherweise haben Sie im Laufe der Zeit Veränderungen Ihrer morgendlichen Energie bemerkt. Durchblutung und Kollagen sind zwei natürliche Faktoren, die daran beteiligt sind, und beide können gut auf beständige Lebensgewohnheiten ansprechen. In diesem Bereich bemerken viele Menschen den größten Unterschied durch kleine Veränderungen."
             offerTitle.textContent =
-              "Your personalized wellness overview is ready"
+              "Ihre persönliche Wellness-Übersicht ist bereit"
             offerDetail.textContent =
-              "At age " +
+              "Im Alter von " +
               age +
-              " with an estimated " +
+              " Jahren, mit einer geschätzten Veränderung von " +
               totalLoss.toFixed(0) +
-              "% change and " +
-              state.sleep +
-              " sleep quality, you're in a window where consistent daily habits tend to make the biggest difference. A wellness educator explains them step by step."
+              " % und " +
+              sleepLabels[state.sleep] +
+              " Schlaf, befinden Sie sich in einer Phase, in der beständige tägliche Gewohnheiten in der Regel den größten Unterschied machen. Ein Wellness-Experte erklärt sie Schritt für Schritt."
           } else {
-            gradeOut.textContent = "Significant"
+            gradeOut.textContent = "Erheblich"
             gradeOut.style.color = "#dc2626"
             gradeDesc.textContent =
-              "At this level, you may feel your morning energy isn't what it used to be. The good news: circulation and collagen can still respond to healthy lifestyle changes at any stage. Many people find consistent daily habits help them feel more refreshed."
+              "Auf diesem Niveau haben Sie möglicherweise das Gefühl, dass Ihre morgendliche Energie nicht mehr das ist, was sie einmal war. Die gute Nachricht: Durchblutung und Kollagen können in jeder Phase noch auf gesunde Veränderungen des Lebensstils ansprechen. Viele Menschen stellen fest, dass beständige tägliche Gewohnheiten ihnen helfen, sich erfrischter zu fühlen."
             offerTitle.textContent =
-              "This overview was prepared for men with an estimated " +
+              "Diese Übersicht wurde für Männer mit einer geschätzten Veränderung von " +
               totalLoss.toFixed(0) +
-              "% change"
+              " % erstellt"
             offerDetail.textContent =
-              "Your profile — age " +
+              "Ihr Profil — Alter " +
               age +
-              ", " +
-              state.sleep +
-              " sleep — matches people who often see meaningful improvements from lifestyle changes. The video covers simple daily habits, step by step."
+              ", mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf — entspricht Menschen, die durch Änderungen des Lebensstils häufig deutliche Verbesserungen erleben. Das Video behandelt einfache tägliche Gewohnheiten, Schritt für Schritt."
           }
         }
 
