@@ -747,9 +747,6 @@
         const url = new URL(href, window.location.href)
         url.searchParams.set("sub16", "L1") // adiciona ou substitui sub16=L1
 
-        // dispara o postback de InitiateCheckout
-        handleInitiateCheckoutPostbackUrlPostback()
-
         // redireciona (funciona no iPhone/Safari)
         window.location.href = url.toString()
       }
